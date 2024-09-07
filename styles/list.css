@@ -1,12 +1,22 @@
+.list-page {
+  margin: 2%;
+}
+
 ul {
   list-style: none;
 }
 
-.hotel-list a {
+.list-view-cards {
+  width: 100%;
+}
+.list-view-cards a.list-view-card {
+  display: block;
+  width: 40%;
+  background-color: rgb(132, 136, 139);
+  margin-bottom: 2%;
   text-decoration: none;
   color: #000000;
 }
-.hotel-list img {
-  height: 180px;
-  width: 250px;
+.list-view-cards a.list-view-card img {
+  width: 50%;
 }/*# sourceMappingURL=list.css.map */

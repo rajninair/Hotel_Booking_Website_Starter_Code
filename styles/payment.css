@@ -1,8 +1,30 @@
 .payment-page {
-    .image-wrapper {
-        img {
-            width: 500px;
-            height: 500px;
-        }
-    }
+  margin: 2% 4%;
 }
+.payment-page .hotel-info {
+  background-color: rgb(132, 136, 139);
+  width: 50%;
+  margin: 2% auto;
+}
+.payment-page .hotel-info .image-wrapper {
+  margin-bottom: 2%;
+}
+.payment-page .hotel-info .image-wrapper img {
+  width: 80%;
+}
+.payment-page .hotel-info .hotel-details h2,
+.payment-page .hotel-info .hotel-details p {
+  margin-bottom: 2%;
+}
+.payment-page .guest-details p {
+  margin-bottom: 2%;
+}
+.payment-page .tarrif-details {
+  border: 1px solid black;
+  margin-bottom: 2%;
+  padding: 2%;
+  border-radius: 5px;
+}
+.payment-page .tarrif-details p:nth-child(1) {
+  margin-bottom: 2%;
+}/*# sourceMappingURL=payment.css.map */

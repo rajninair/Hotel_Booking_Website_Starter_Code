@@ -1,4 +1,24 @@
-.image-wrapper img {
+.detail-page {
+  margin: 2% 4%;
+}
+.detail-page .image-wrapper img {
   width: 500px;
   height: 500px;
+}
+.detail-page form {
+  margin-bottom: 1%;
+}
+.detail-page ul.ammenities {
+  margin-left: 4%;
+  list-style: disc;
+  margin-bottom: 2%;
+}
+
+h2,
+h3 {
+  margin-top: 1%;
+}
+
+p {
+  margin-bottom: 1%;
 }/*# sourceMappingURL=detail.css.map */

@@ -1,9 +1,23 @@
-.image-container {
-  display: flex;
-  gap: 2px;
-  flex-wrap: wrap;
+.search-bar-container {
+  height: 380px;
+  position: relative;
+  background-image: url("https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
-.image-container img {
+
+.city-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 15%;
+}
+.city-cards a {
+  padding: 4%;
+}
+.city-cards a img {
   height: 150px;
   width: 150px;
+  border-radius: 25%;
 }/*# sourceMappingURL=index.css.map */
