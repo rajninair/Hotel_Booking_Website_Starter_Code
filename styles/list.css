@@ -6,17 +6,43 @@ ul {
   list-style: none;
 }
 
+.view-style {
+  display: flex;
+  padding: 2%;
+  gap: 2%;
+  justify-content: center;
+}
+.view-style li a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
 .list-view-cards {
   width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 3%;
 }
 .list-view-cards a.list-view-card {
   display: block;
-  width: 40%;
+  width: 45%;
   background-color: rgb(132, 136, 139);
-  margin-bottom: 2%;
+  margin-bottom: 4%;
   text-decoration: none;
   color: #000000;
 }
 .list-view-cards a.list-view-card img {
   width: 50%;
+  margin-bottom: 4%;
+}
+.list-view-cards a.list-view-card h3,
+.list-view-cards a.list-view-card p {
+  margin-bottom: 2%;
+}
+
+.map-view {
+  display: none;
 }/*# sourceMappingURL=list.css.map */

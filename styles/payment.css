@@ -22,9 +22,14 @@
 .payment-page .tarrif-details {
   border: 1px solid black;
   margin-bottom: 2%;
+  margin-right: 2%;
   padding: 2%;
   border-radius: 5px;
 }
 .payment-page .tarrif-details p:nth-child(1) {
   margin-bottom: 2%;
+}
+.payment-page .payment-cta {
+  text-decoration: none;
+  color: #000000;
 }/*# sourceMappingURL=payment.css.map */
