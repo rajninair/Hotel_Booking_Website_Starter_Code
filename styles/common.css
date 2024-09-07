@@ -1,3 +1,30 @@
-.logo {
-    width: 100px;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.page-container header {
+  display: flex;
+  align-items: center;
+}
+.page-container header .logo {
+  width: 100px;
+}
+.page-container header .nav-links a {
+  text-decoration: none;
+}
+.page-container footer .social-links {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.page-container footer .social-links a img {
+  width: 22px;
+  height: 20px;
+}/*# sourceMappingURL=common.css.map */
