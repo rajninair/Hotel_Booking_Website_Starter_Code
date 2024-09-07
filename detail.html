@@ -22,47 +22,71 @@
             </nav>
         </header>
         <main class="detail-page">
-            <div class="image-wrapper">
-                <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
-                    alt="Radisson Blu Hotel">
+
+            <div class="form-wrapper">
+                <div class="image-wrapper">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
+                        alt="Radisson Blu Hotel">
+                </div>
+
+                <form action="./payment.html">
+                    <div class="input-group">
+                        <label for="guestCount">Adults:
+                        </label>
+                        <div>
+                            <input required type="number" id="guestCount" name="guestCount">
+                        </div>
+
+                    </div>
+                    <div class="input-group">
+                        <label for="guestName">Name: </label>
+                        <div>
+                            <input required type="text" id="guestName" name="guestName">
+                        </div>
+
+                    </div>
+                    <div class="input-group">
+                        <label for="fromDate">From Date: </label>
+                        <div>
+                            <input required type="date" id="fromDate" name="fromDate">
+                        </div>
+
+                    </div>
+                    <div class="input-group">
+                        <label for="toDate">To Date: </label>
+                        <div>
+                            <input required type="date" id="toDate" name="toDate">
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label for="totalAmount">Total: </label>
+                        <div>
+                            <input type="number" readonly id="totalAmount" name="totalAmount">
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label>&nbsp;</label>
+                        <div>
+                            <button type="submit">Book Now</button>
+                        </div>
+                    </div>
+
+
+
+
+                </form>
             </div>
 
-            <form action="./payment.html">
-                <div>
-                    <label for="guestCount">Adults:
-                        <input required type="number" id="guestCount" name="guestCount">
-                    </label>
-                </div>
-                <div>
-                    <label for="guestName">Name:
-                        <input required type="text" id="guestName" name="guestName">
-                    </label>
-                </div>
-                <div>
-                    <label for="fromDate">From Date:
-                        <input required type="date" id="fromDate" name="fromDate">
-                    </label>
-                </div>
-                <div>
-                    <label for="toDate">To Date:
-                        <input required type="date" id="toDate" name="toDate">
-                    </label>
-                </div>
-                <div>
-                    <label for="totalAmount">Total:
-                        <input type="number" readonly id="totalAmount" name="totalAmount">
-                    </label>
-                </div>
-                <button type="submit">Book Now</button>
-            </form>
+
+
             <!-- <a class="cta" href="payment.html">Book Now</a> -->
 
             <h2>Radisson Blu Hotel</h2>
 
-            <h3>RATING</h3>
+            <h3 class="sub-title">RATING</h3>
             <p> 5 Star</p>
 
-            <h3> AMMENITIES</h3>
+            <h3 class="sub-title"> AMMENITIES</h3>
             <ul class="ammenities">
                 <li>
                     Room service
@@ -80,7 +104,7 @@
                     Pool
                 </li>
             </ul>
-            <h3>DESCRIPTION</h3>
+            <h3 class="sub-title">DESCRIPTION</h3>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum animi quia laudantium?
             </p>
@@ -97,7 +121,7 @@
             </div>
 
             <p class="copyright-text">
-                @C 2024 ROOM SEARCH PVT. LTD.
+                &copy; 2024 ROOM SEARCH PVT. LTD.
             </p>
 
             <div class="social-links">
@@ -111,9 +135,6 @@
                     <img src="./assests/images/twitter.png" alt="">
                 </a>
             </div>
-
-
-
         </footer>
     </div>
 

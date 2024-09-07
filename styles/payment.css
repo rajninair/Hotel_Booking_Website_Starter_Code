@@ -2,34 +2,78 @@
   margin: 2% 4%;
 }
 .payment-page .hotel-info {
-  background-color: rgb(132, 136, 139);
+  background-color: grey;
   width: 50%;
   margin: 2% auto;
-}
-.payment-page .hotel-info .image-wrapper {
-  margin-bottom: 2%;
+  display: flex;
 }
 .payment-page .hotel-info .image-wrapper img {
-  width: 80%;
+  max-width: 270px;
+  max-height: 300px;
 }
-.payment-page .hotel-info .hotel-details h2,
+.payment-page .hotel-info .hotel-details {
+  flex: 1;
+  padding: 40px 20px;
+}
+.payment-page .hotel-info .hotel-details h2 {
+  margin-bottom: 20px;
+}
 .payment-page .hotel-info .hotel-details p {
-  margin-bottom: 2%;
+  margin-bottom: 20px;
 }
-.payment-page .guest-details p {
-  margin-bottom: 2%;
+.payment-page .guest-tariff-details {
+  display: flex;
+  width: 98%;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rosybrown;
+  padding: 20px;
+  border: 1px solid #000000;
+  border-radius: 4px;
+  height: auto;
+  margin-top: 2%;
 }
-.payment-page .tarrif-details {
-  border: 1px solid black;
-  margin-bottom: 2%;
-  margin-right: 2%;
-  padding: 2%;
-  border-radius: 5px;
+.payment-page .guest-tariff-details .guest-details {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
-.payment-page .tarrif-details p:nth-child(1) {
-  margin-bottom: 2%;
+.payment-page .guest-tariff-details .guest-details p {
+  margin-bottom: 20px;
 }
-.payment-page .payment-cta {
+.payment-page .guest-tariff-details .guest-details p:last-child {
+  margin-bottom: 0px;
+}
+.payment-page .guest-tariff-details .tarrif-details p:nth-child(1) {
+  margin-bottom: 20px;
+}
+.payment-page .guest-tariff-details .tarrif-details p:last-child {
+  margin-bottom: 0px;
+}
+.payment-page .guest-tariff-details .payment-cta {
   text-decoration: none;
   color: #000000;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+@media only screen and (max-width: 600px) {
+  .payment-page .guest-tariff-details {
+    display: block;
+    background-color: pink;
+  }
+  .payment-page .guest-tariff-details .guest-details {
+    margin-bottom: 30px;
+  }
+  .payment-page .guest-tariff-details .tarrif-details {
+    margin-bottom: 30px;
+  }
+  .payment-page .payment-cta {
+    display: block;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
 }/*# sourceMappingURL=payment.css.map */

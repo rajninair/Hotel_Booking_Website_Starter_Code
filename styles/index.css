@@ -38,13 +38,148 @@
 .city-cards {
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 10%;
   flex-wrap: wrap;
-  margin: 0 15%;
-}
-.city-cards a {
   padding: 4%;
 }
-.city-cards a img {
+.city-cards .card {
+  height: 150px;
+  width: 150px;
+  position: relative;
+  margin-bottom: 20px;
+  border-radius: 25%;
+  overflow: hidden;
+  box-shadow: 10px 10px 10px grey;
+  background-color: rgb(191, 23, 144);
+}
+.city-cards .card .city-title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #f1f1f1;
+  font-size: 14px;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+.city-cards .card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+.city-cards .card:hover::after {
+  opacity: 1;
+}
+.city-cards .card:hover .city-title {
+  opacity: 1;
+}
+.city-cards .card img {
+  height: 150px;
+  width: 150px;
+  border-radius: 25%;
+}
+
+.city-cards123 {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  flex-wrap: wrap;
+  padding: 4%;
+}
+.city-cards123 .card {
+  position: relative;
+  margin-bottom: 20px;
+  border-radius: 25%;
+  overflow: hidden;
+}
+.city-cards123 .card .city-title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+.city-cards123 .card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+.city-cards123 .card:hover::after {
+  opacity: 1;
+}
+.city-cards123 .card:hover .city-title {
+  opacity: 1;
+}
+.city-cards123 .card img {
+  height: 150px;
+  width: 150px;
+  border-radius: 25%;
+}
+
+.city-cards123 {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  flex-wrap: wrap;
+  padding: 4%;
+}
+.city-cards123 .card {
+  position: relative;
+  margin-bottom: 20px;
+  border-radius: 25%;
+}
+.city-cards123 .card .city-title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%);
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.city-cards123 .card ::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Gray overlay */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.city-cards123 .card:hover::after {
+  opacity: 1;
+}
+.city-cards123 .card:hover.city-title {
+  opacity: 1;
+}
+.city-cards123 .card img {
   height: 150px;
   width: 150px;
   border-radius: 25%;
