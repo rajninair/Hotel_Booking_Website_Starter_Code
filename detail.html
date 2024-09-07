@@ -26,7 +26,36 @@
                 <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
                     alt="Radisson Blu Hotel">
             </div>
-            <a class="cta" href="payment.html">Book Now</a>
+
+            <form action="./payment.html">
+                <div>
+                    <label for="guestCount">Adults:
+                        <input type="number" id="guestCount" name="guestCount">
+                    </label>
+                </div>
+                <div>
+                    <label for="guestName">Name:
+                        <input type="text" id="guestName" name="guestName">
+                    </label>
+                </div>
+                <div>
+                    <label for="fromDate">From Date:
+                        <input type="date" id="fromDate" name="fromDate">
+                    </label>
+                </div>
+                <div>
+                    <label for="toDate">To Date:
+                        <input type="date" id="toDate" name="toDate">
+                    </label>
+                </div>
+                <div>
+                    <label for="totalAmount">Total:
+                        <input type="number" readonly id="totalAmount" name="totalAmount">
+                    </label>
+                </div>
+                <button type="submit">Book Now</button>
+            </form>
+            <!-- <a class="cta" href="payment.html">Book Now</a> -->
 
             <h2>Radisson Blu Hotel</h2>
 
