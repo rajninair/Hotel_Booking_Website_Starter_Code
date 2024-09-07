@@ -5,4 +5,8 @@ ul {
 .hotel-list a {
   text-decoration: none;
   color: #000000;
+}
+.hotel-list img {
+  height: 180px;
+  width: 250px;
 }/*# sourceMappingURL=list.css.map */

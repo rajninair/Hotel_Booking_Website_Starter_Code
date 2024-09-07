@@ -9,15 +9,35 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+  height: 100vh;
+}
+
+body {
+  height: 100%;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
 .page-container header {
   display: flex;
   align-items: center;
 }
 .page-container header .logo {
-  width: 100px;
+  width: 60px;
+  height: 60px;
 }
 .page-container header .nav-links a {
   text-decoration: none;
+}
+.page-container main {
+  flex: 1;
+  overflow-y: scroll;
+  padding-bottom: 20px;
 }
 .page-container footer .social-links {
   display: flex;
@@ -25,6 +45,6 @@
   gap: 4px;
 }
 .page-container footer .social-links a img {
-  width: 22px;
   height: 20px;
+  width: 22px;
 }/*# sourceMappingURL=common.css.map */
