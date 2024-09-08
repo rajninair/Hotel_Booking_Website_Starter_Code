@@ -56,6 +56,7 @@ body {
 }
 .page-container footer .copyright-text {
   font-size: 10px;
+  margin-bottom: 0px;
 }
 .page-container footer .social-links {
   display: flex;
@@ -66,4 +67,28 @@ body {
 .page-container footer .social-links a img {
   height: 20px;
   width: 22px;
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  /* Styles for screens between 576px and 768px */
+}
+@media (max-width: 575.98px) {
+  /* Styles for screens less than 576px */
+  .page-container footer {
+    flex-direction: column;
+  }
+  .page-container footer .contant-us {
+    order: 1;
+    margin-top: 16px;
+  }
+  .page-container footer .social-links {
+    justify-content: center;
+    order: 2;
+    margin-top: 16px;
+  }
+  .page-container footer .copyright-text {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    order: 3;
+  }
 }/*# sourceMappingURL=common.css.map */

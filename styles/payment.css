@@ -58,14 +58,49 @@
   font-weight: bold;
   text-transform: capitalize;
 }
-@media only screen and (max-width: 600px) {
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .payment-page .hotel-info {
+    width: 90%;
+  }
   .payment-page .guest-tariff-details {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 575.98px) {
+  .payment-page .hotel-info {
+    display: block;
+    width: 100%;
+    margin: auto;
+  }
+  .payment-page .hotel-info .image-wrapper {
+    text-align: center;
+  }
+  .payment-page .hotel-info .hotel-details {
+    text-align: center;
+  }
+  .payment-page .guest-tariff-details {
+    width: 100%;
     display: block;
   }
-  .payment-page .guest-tariff-details .guest-details {
-    margin-bottom: 30px;
+  .payment-page .guest-tariff-details .guest-details p {
+    margin-bottom: 16px;
   }
-  .payment-page .guest-tariff-details .tarrif-details {
-    margin-bottom: 30px;
+  .payment-page .guest-tariff-details .guest-details p:last-child {
+    margin-bottom: 16px;
+  }
+  .payment-page .guest-tariff-details .guest-details span {
+    font-family: "Concert One", sans-serif;
+    font-weight: bold;
+  }
+  .payment-page .guest-tariff-details .tarrif-details p {
+    margin-bottom: 16px;
+  }
+  .payment-page .guest-tariff-details .tarrif-details p:last-child {
+    margin-bottom: 16px;
+  }
+  .payment-page .guest-tariff-details .tarrif-details span {
+    font-family: "Concert One", sans-serif;
+    font-weight: bold;
   }
 }/*# sourceMappingURL=payment.css.map */

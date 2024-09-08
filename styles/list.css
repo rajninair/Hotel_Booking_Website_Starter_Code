@@ -52,4 +52,30 @@ ul {
   margin-bottom: 16px;
   font-weight: normal;
   font-size: 12px;
+}
+
+.map-view {
+  text-align: center;
+}
+.map-view img {
+  max-width: 100%;
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .map-view img {
+    max-width: 100%;
+  }
+}
+@media (max-width: 575.98px) {
+  .list-view-cards {
+    display: block;
+    padding: 30px 10px;
+  }
+  .list-view-cards a.list-view-card {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  .map-view img {
+    max-width: 100%;
+  }
 }/*# sourceMappingURL=list.css.map */
