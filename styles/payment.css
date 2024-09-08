@@ -9,7 +9,7 @@
 }
 .payment-page .hotel-info .image-wrapper img {
   max-width: 270px;
-  max-height: 300px;
+  height: 230px;
 }
 .payment-page .hotel-info .hotel-details {
   flex: 1;
@@ -61,19 +61,11 @@
 @media only screen and (max-width: 600px) {
   .payment-page .guest-tariff-details {
     display: block;
-    background-color: pink;
   }
   .payment-page .guest-tariff-details .guest-details {
     margin-bottom: 30px;
   }
   .payment-page .guest-tariff-details .tarrif-details {
     margin-bottom: 30px;
-  }
-  .payment-page .payment-cta {
-    display: block;
-    margin-top: 20px;
-    font-size: 18px;
-    font-weight: bold;
-    text-transform: capitalize;
   }
 }/*# sourceMappingURL=payment.css.map */

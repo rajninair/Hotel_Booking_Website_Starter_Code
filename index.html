@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/index.css">
 </head>
@@ -16,9 +18,12 @@
         <header>
             <img src="./assests/images/logo.png" alt="logo" class="logo">
             <nav class="nav-links">
-                <a class="card" href="./login.html">
-                    Login
-                </a>
+                <!-- <a class="btn btn-md btn-light" href="./login.html">
+                    LOGIN
+                </a> -->
+                <button type="button" class="btn btn-light" data-toggle="modal" data-target="#loginModal">
+                    LOGIN
+                </button>
             </nav>
         </header>
         <!-- Main content -->
@@ -27,12 +32,10 @@
                 <div class="input-container">
                     <input type="search" placeholder="City">
                 </div>
-
             </section>
 
             <!-- Image container -->
             <section class="city-cards">
-
                 <a class="card" href="./list.html">
                     <span class="city-title">Delhi</span>
                     <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" alt="Delhi">
@@ -53,17 +56,17 @@
                 </a>
             </section>
 
-            <!-- View more link -->
             <div class="view-more">
-
-                <a class="view-more--link" href="./index.html">View more >></a>
+                <button type="button" class="btn btn-secondary">View More</button>
             </div>
 
         </main>
         <!-- Footer -->
         <footer>
             <div class="contant-us">
-                <a class="card" href="./contact.html">Contact Us</a>
+                <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#contactUsModal">
+                    Contact Us
+                </button>
             </div>
 
             <p class="copyright-text">
@@ -81,14 +84,90 @@
                     <img src="./assests/images/twitter.png" alt="">
                 </a>
             </div>
-
-
-
         </footer>
     </div>
 
 
+    <!-- Modals -->
+    <!-- Login Modal-->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Please Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group row">
+                            <label for="username" class="col-sm-3 col-form-label">
+                                Username:
+                            </label>
+                            <div class="col-sm-9">
+                                <input class="form-control" type="text" id="username" name="username" required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="password" class="col-sm-3 col-form-label">
+                                Password
+                            </label>
+                            <div class="col-sm-9">
+                                <input class="form-control" type="password" id="password" name="password" required>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button class="btn btn-md btn-primary" type="submit">
+                        Login
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- Contact Us Modal-->
+    <div class="modal fade" id="contactUsModal" tabindex="-1" aria-labelledby="contactUsModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactUsModalLabel">Get in touch</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-secondary mb-0">
+                        Thank you for reaching out!!!
+                    </p>
+                    <p class="text-secondary mb-3">
+                        Please enter your email and we will get back to you.
+                    </p>
+                    <form>
+                        <div class="form-group row">
+                            <label for="email" class="col-sm-2 col-form-label">
+                                Email:
+                            </label>
+                            <div class="col-sm-7">
+                                <input class="form-control" type="email" id="email" name="email"
+                                    placeholder="Enter your email id" required>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer ">
+                    <button class="btn btn-md btn-primary" type="submit">
+                        Submit
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
 </body>
 

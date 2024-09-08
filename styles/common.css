@@ -39,10 +39,6 @@ body {
 .page-container header .nav-links {
   margin-right: 2%;
 }
-.page-container header .nav-links a {
-  text-decoration: none;
-  color: #000000;
-}
 .page-container main {
   flex: 1;
   overflow-y: auto;
@@ -57,10 +53,6 @@ body {
 }
 .page-container footer .contant-us {
   margin-left: 2%;
-}
-.page-container footer .contant-us a {
-  text-decoration: none;
-  color: #000000;
 }
 .page-container footer .copyright-text {
   font-size: 10px;

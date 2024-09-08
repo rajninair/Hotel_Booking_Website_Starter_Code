@@ -51,7 +51,6 @@
   border-radius: 25%;
   overflow: hidden;
   box-shadow: 10px 10px 10px grey;
-  background-color: rgb(191, 23, 144);
 }
 .city-cards .card .city-title {
   position: absolute;
@@ -189,8 +188,4 @@
   width: 100%;
   text-align: center;
   margin: 1% 0 2%;
-}
-.view-more a {
-  color: #000000;
-  text-decoration: none;
 }/*# sourceMappingURL=index.css.map */
