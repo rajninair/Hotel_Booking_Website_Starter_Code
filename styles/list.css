@@ -78,4 +78,7 @@ ul {
   .map-view img {
     max-width: 100%;
   }
+  #map {
+    height: 100%;
+  }
 }/*# sourceMappingURL=list.css.map */

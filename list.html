@@ -102,22 +102,13 @@
                 </div>
                 <!-- Map View -->
                 <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                    <div class="map-container map-view" id="map-view">
-                        <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png"
-                            alt="MAP VIEW">
-
+                    <div class="map-container map-view" id="map">
+                        <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png"  alt="MAP VIEW">
                     </div>
                 </div>
-
-
             </div>
-
-
-
         </main>
-
         <!-- Footer -->
-
         <footer>
             <div class="contant-us">
                 <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#contactUsModal">
@@ -142,8 +133,6 @@
             </div>
         </footer>
     </div>
-
-
 
     <!-- Modals -->
     <!-- Login Modal-->
@@ -227,6 +216,22 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
 
+    <!-- Google Map -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+    <script>
+        var map;
+        function initMap() {
+            map = new google.maps.Map(document.getElementById("map"), {
+                center: { lat: -34.397, lng: 150.644 },
+                zoom: 8
+            });
+        }
+    </script>
+
+
+    <script>
+
+    </script>
 </body>
 
 </html>
